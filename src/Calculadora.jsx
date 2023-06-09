@@ -9,6 +9,11 @@ const Calculadora = () => {
 
     const [resultado, setResultado] = useState('');
 
+    const handleButtonPress = (value) => {
+        setResultado(resultado + value);
+    };
+
+
 
 }
 export default Calculadora;
