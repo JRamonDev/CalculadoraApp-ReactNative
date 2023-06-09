@@ -27,5 +27,138 @@ const Calculadora = () => {
         setResultado('');
     };
 
+    return (
+        <View style={style.container}>
+            <View style={style.resultcontainer}>
+                <Text style={style.resultText}> {resultado}</Text>
+            </View >
+            <View style={style.buttonContainer}>
+                <View style={style.row}>
+                    <TouchbleOpacity
+                        style={style.button}
+                        onPress={() => handleButtonPress('7')}
+                    >
+                        <Text style={style.buttonText}> 7 </Text>
+                    </TouchbleOpacity>
+                    <TouchbleOpacity
+                        style={style.button}
+                        onPress={() => handleButtonPress('8')}
+                    >
+                        <Text style={style.buttonText}> 8 </Text>
+                    </TouchbleOpacity>
+                    <TouchbleOpacity
+                        style={style.button}
+                        onPress={() => handleButtonPress('9')}
+                    >
+                        <Text style={style.buttonText}> 9 </Text>
+                    </TouchbleOpacity>
+                </View>
+
+                <View style={style.row}>
+                    <TouchbleOpacity
+                        style={style.button}
+                        onPress={() => handleButtonPress('4')}
+                    >
+                        <Text style={style.buttonText}> 4 </Text>
+                    </TouchbleOpacity>
+                    <TouchbleOpacity
+                        style={style.button}
+                        onPress={() => handleButtonPress('5')}
+                    >
+                        <Text style={style.buttonText}> 5 </Text>
+                    </TouchbleOpacity>
+                    <TouchbleOpacity
+                        style={style.button}
+                        onPress={() => handleButtonPress('6')}
+                    >
+                        <Text style={style.buttonText}> 6 </Text>
+                    </TouchbleOpacity>
+                </View>
+
+                <View style={style.row}>
+                    <TouchbleOpacity
+                        style={style.button}
+                        onPress={() => handleButtonPress('1')}
+                    >
+                        <Text style={style.buttonText}> 1 </Text>
+                    </TouchbleOpacity>
+                    <TouchbleOpacity
+                        style={style.button}
+                        onPress={() => handleButtonPress('2')}
+                    >
+                        <Text style={style.buttonText}> 1 </Text>
+                    </TouchbleOpacity>
+                    <TouchbleOpacity
+                        style={style.button}
+                        onPress={() => handleButtonPress('3')}
+                    >
+                        <Text style={style.buttonText}> 3 </Text>
+                    </TouchbleOpacity>
+                </View>
+
+                <View style={style.row}>
+                    <TouchbleOpacity
+                        style={style.button}
+                        onPress={() => handleButtonPress('0')}
+                    >
+                        <Text style={style.buttonText}> 0 </Text>
+                    </TouchbleOpacity>
+                    <TouchbleOpacity
+                        style={style.button}
+                        onPress={() => handleButtonPress('.')}
+                    >
+                        <Text style={style.buttonText}> . </Text>
+                    </TouchbleOpacity>
+                    <TouchbleOpacity
+                        style={style.button}
+                        onPress={calculadoraResultado}
+                    >
+                        <Text style={style.buttonText}> = </Text>
+                    </TouchbleOpacity>
+                </View>
+
+                <View style={style.row}>
+                    <TouchbleOpacity
+                        style={style.button}
+                        onPress={() => handleButtonPress(' +')}
+                    >
+                        <Text style={style.buttonText}> + </Text>
+                    </TouchbleOpacity>
+                    <TouchbleOpacity
+                        style={style.button}
+                        onPress={() => handleButtonPress('-')}
+                    >
+                        <Text style={style.buttonText}> - </Text>
+                    </TouchbleOpacity>
+                    <TouchbleOpacity
+                        style={style.button}
+                        onPress={() => handleButtonPress('*')}
+                    >
+                        <Text style={style.buttonText}> * </Text>
+                    </TouchbleOpacity>
+                </View>
+
+                <View style={style.row}>
+                    <TouchbleOpacity
+                        style={style.button}
+                        onPress={() => handleButtonPress('/')}
+                    >
+                        <Text style={style.buttonText}> / </Text>
+                    </TouchbleOpacity>
+                    <TouchbleOpacity
+                        style={style.button}
+                        onPress={limpiarResultado}
+                    >
+                        <Text style={style.buttonText}> C </Text>
+                    </TouchbleOpacity>
+
+                </View>
+
+            </View>
+
+        </View>
+    )
+
+
 }
 export default Calculadora;
