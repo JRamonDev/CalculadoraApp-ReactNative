@@ -5,8 +5,7 @@ import { create, all } from 'mathjs';
 
 const math = create(all);
 
-export default function Calculadora() {
-    return (
-        <></>
-    )
+const Calculadora = () => {
+
 }
+export default Calculadora;
