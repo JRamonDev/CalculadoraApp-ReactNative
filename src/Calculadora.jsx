@@ -13,6 +13,19 @@ const Calculadora = () => {
         setResultado(resultado + value);
     };
 
+    const calculadoraResultado = () => {
+        try {
+            const evaluatedResult = math.evaluate(resultado);
+            setResultado(evaluatedResult.toString());
+
+        } catch (error) {
+            resultado(error);
+
+        }
+
+    };
+
+
 
 
 }
