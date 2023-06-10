@@ -86,7 +86,7 @@ const Calculadora = () => {
                         style={style.button}
                         onPress={() => handleButtonPress('2')}
                     >
-                        <Text style={style.buttonText}> 1 </Text>
+                        <Text style={style.buttonText}> 2 </Text>
                     </TouchableOpacity>
                     <TouchableOpacity
                         style={style.button}
@@ -120,19 +120,19 @@ const Calculadora = () => {
                 <View style={style.row}>
                     <TouchableOpacity
                         style={style.button}
-                        onPress={() => handleButtonPress(' +')}
+                        onPress={() => handleButtonPress(' + ')}
                     >
                         <Text style={style.buttonText}> + </Text>
                     </TouchableOpacity>
                     <TouchableOpacity
                         style={style.button}
-                        onPress={() => handleButtonPress('-')}
+                        onPress={() => handleButtonPress(' - ')}
                     >
                         <Text style={style.buttonText}> - </Text>
                     </TouchableOpacity>
                     <TouchableOpacity
                         style={style.button}
-                        onPress={() => handleButtonPress('*')}
+                        onPress={() => handleButtonPress(' * ')}
                     >
                         <Text style={style.buttonText}> * </Text>
                     </TouchableOpacity>
@@ -141,7 +141,7 @@ const Calculadora = () => {
                 <View style={style.row}>
                     <TouchableOpacity
                         style={style.button}
-                        onPress={() => handleButtonPress('/')}
+                        onPress={() => handleButtonPress(' / ')}
                     >
                         <Text style={style.buttonText}> / </Text>
                     </TouchableOpacity>
@@ -166,14 +166,16 @@ const style = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor: '#4A5053'
     },
     resultcontainer: {
         marginBottom: 20,
     },
     resultText: {
-        fontSize: 24,
+        fontSize: 30,
         fontWeight: 'bold',
+        color: 'white'
     },
     buttonContainer: {
         width: 300,
@@ -188,14 +190,15 @@ const style = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'blue',
+        backgroundColor: '#162B4E',
         padding: 10,
         borderRadius: 5,
         margin: 4
     },
     buttonText: {
         fontSize: 20,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        color: 'white'
     },
 
 });
